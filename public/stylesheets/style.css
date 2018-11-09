@@ -1,0 +1,73 @@
+body {
+    font: 16px "Muli", "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  button,
+  .btn {
+    cursor: pointer;
+  }
+  nav {
+    margin-bottom: 2rem;
+  }
+  nav a.navbar-brand {
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+  }
+  nav button i {
+    margin-right: 0.3rem;
+  }
+  ul.articleList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul.articleList li {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  ul.articleList li .date {
+    margin-top: 1rem;
+    padding: 0.3rem 0 0.5rem 0;
+    font-size: 0.8rem;
+    color: #bbb;
+  }
+  ul.articleList li i {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    color: #e91e63;
+  }
+  ul.articleList li i.note {
+    color: #ffb74d;
+  }
+  ul.articleList li .noteField {
+    display: none;
+    background-color: #ffcd82;
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 8px;
+    width: 80%;
+    margin: 1rem 1rem 1rem 1.5rem;
+  }
+  ul.articleList li .noteField label {
+    display: block;
+    padding: 0.3rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    background-color: #ffcd82;
+    color: #fff;
+    letter-spacing: 0.05rem;
+  }
+  ul.articleList li .noteField textarea {
+    padding: 0.5rem;
+  }
+  ul.articleList li .noteField .saved {
+    position: relative;
+    top: 0.5rem;
+    opacity: 0;
+    font-size: 1rem;
+    margin-left: 0.25rem;
+  }
+  ul.articleList li .noteField .saved i {
+    margin: 0;
+    color: #333;
+  }

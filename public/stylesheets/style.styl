@@ -1,0 +1,85 @@
+// Palette
+pink        = #E91E63
+yellow      = #ffb74d
+lightyellow = lighten(yellow, 30%)
+black       = #333333
+white       = #FFFFFF
+gray        = #9E9E9E
+lightgray   = lighten(gray, 30%)
+
+body {
+  font: 16px "Muli","Lucida Grande", Helvetica, Arial, sans-serif
+}
+
+button, .btn {
+  cursor: pointer
+}
+
+nav {
+  margin-bottom: 2rem
+
+  a.navbar-brand {
+    font-weight: bold
+    letter-spacing: -0.05rem
+  }
+  button i {
+    margin-right: .3rem
+  }
+}
+
+ul.articleList {
+  list-style: none
+  padding: 0
+  margin: 0
+  li {
+    font-size: 1.5rem
+    margin-bottom: 1.2rem
+    .date {
+      margin-top: 1rem
+      padding: .3rem 0 .5rem 0
+      font-size: .8rem
+      color: lightgray
+    }
+    i {
+      cursor: pointer
+      margin-right: .5rem
+      color: pink
+    }
+    i.note {
+      color: yellow
+    }
+    .noteField {
+      display: none
+      background-color: lightyellow
+      padding: .5rem 1rem 1rem 1rem
+      border-radius: 8px
+      width: 80%
+      margin: 1rem 1rem 1rem 1.5rem
+      label {
+        display: block
+        padding: .3rem
+        font-weight: bold
+        margin: 0 0 .5rem 0
+        font-size: .8rem
+        text-transform: uppercase
+        background-color: lightyellow
+        color: white
+        letter-spacing: .05rem
+      }
+      textarea {
+        padding: .5rem
+      }
+      .saved {
+        position: relative
+        top: .5rem
+        opacity: 0
+        font-size: 1rem
+        margin-left: .25rem
+        i {
+          margin: 0
+          color: black
+        }
+      }
+    }
+  } //li
+}

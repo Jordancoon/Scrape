@@ -1,0 +1,37 @@
+<h1>{{title}}</h1>
+{{#if updated}}
+<h3>Articles added: {{updated}}</h3>
+{{/if}}
+{{#if data}}
+<ul class="articleList">
+  {{#each data}}
+    <li>
+      <div class="date">
+        {{this.timestamp}}
+      </div>
+
+      <i data-article-id="{{this._id}}" data-favorite="{{this.favorite}}"
+      class="favorite fa fa-hand-spock-o"{{#unless this.favorite}}-o{{/unless}}"
+      aria-hidden="true"></i>
+
+      <i data-article-id="{{this._id}}" class="note fa fa-sticky-note-o" aria-hidden="true"></i>
+
+      <a href="{{this.link}}" target="_blank">{{this.title}}</a>
+
+      <div class="noteField">
+        <form data-article-id="{{this._id}}" class="noteForm">
+          <div class="form-group">
+            <label for="noteText">Note</label>
+            <textarea class="form-control noteText" rows="3">{{this.note.body}}</textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-dark btn-sm">Save Note</button>
+          <span class="saved"><i class="fa fa-check" aria-hidden="true"></i> Saved!</span>
+        </form>
+      </div>
+
+    </li>
+  {{/each}}
+</ul>
+{{else}}
+<p>No articles yet.</p>
+{{/if}}
